@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>introduction to html</title>
+        <style>
+            .inputWrapper{
+                width:40%;
+                height: auto;
+                padding: 10px;
+                margin: auto;
+                background-color: red;
+            }
+            .inputWrapper input{
+                width: 95%;
+                height: 40px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+          <!-- <div class="inputWrapper"> -->
+             <!-- <input type="text" placeholder="name"><br/>
+             <input type="email" placeholder="email"/><br/>
+             <input type="password" placeholder="password"/><br/>
+             <input type="text" placeholder="phone_number"/> -->
+             <p>hello</p>
+             <button>submit</button>
+             <img height="200" width="300" src="image.jpg" />
+             <img height="200" width="300" src="/pictures/puppy.jpg" />
+             <img height="200" width="300" src="/pracimages/app.jpeg" alt=""/>
+             <video src=""></video>
+          <!-- </div> -->
+          <script>
+            const cars=[{
+                name:'toyota',
+                mileage:20000,
+                price:200000,
+                color:'red'
+            },
+            {
+                name:'nissa',
+                mileage:30000,
+                price:300000,
+                color:'green'
+            },
+            {
+                name:'bmw',
+                mileage:40000,
+                price:400000,
+                color:'yellow'
+            }]
+            function getItem(){
+             const bmw=cars.filter(function(item){
+                return item.name === 'bmw'
+              })
+              console.log(bmw)
+            }
+            getItem()
+          </script>
+    </body>
+</html>
